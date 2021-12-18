@@ -1,0 +1,58 @@
+
+.splash {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.splash-content, .splash-backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.splash-content {
+    display: flex;
+    align-items: flex-end;
+    z-index: 998;
+}
+.splash-content > .splash-content-details {
+    text-align: left;
+    padding: 50px 25px;
+    max-width: 500px;
+}
+.splash-content > .splash-content-details > .description {
+    font-size: 18px;
+    line-height: 140%;
+}
+.splash-content > .splash-content-details > .action-buttons > button {
+    border: 0; outline: 0;
+    margin: 8px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.splash-content > .splash-content-details > .action-buttons > button:hover {
+    opacity: .8;
+}
+.splash-content > .splash-content-details > .action-buttons > button:nth-of-type(1) {
+    margin-left: 0;
+    background-color: var(--white);
+    color: black;
+}
+.splash-content > .splash-content-details > .action-buttons > button:nth-of-type(2) {
+    background: transparent;
+    border: solid 2px var(--white);
+    color: var(--white);
+}
+.splash-backdrop {
+    background: linear-gradient(to right, #33D1F1, black);
+    -webkit-box-shadow: inset 0px 100px 33px 5px rgba(0,0,0,0.65); 
+    box-shadow: inset 0px 100px 33px 5px rgba(0,0,0,0.65);
+    text-align: right;
+}
+.splash-backdrop > img {
+    height: 100%;
+    mix-blend-mode: screen;
+}

@@ -12,4 +12,12 @@ body {
 
 .App {
   text-align: center;
+  height: 500vh;
+}
+
+h3 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
 }

@@ -1,5 +1,7 @@
 
 nav {
+    position: fixed;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,6 +9,10 @@ nav {
     width: calc(100% - 20px);
     height: 40px;
     border-bottom: solid 1px var(--medium-grey);
+    transition: .2s;
+}
+nav.scrolled {
+    background-color: var(--dark-grey);
 }
 
 nav > .branding-container {
@@ -64,6 +70,7 @@ nav > .user-options > a {
     vertical-align: top;
     padding: 0 15px;
     height: 100%;
+    cursor: pointer;
 }
 /* magnifying glass */
 nav > .user-options > a.magifying-glass-container > img {
@@ -87,9 +94,16 @@ nav > .user-options > a.profile-icon-container > .profile-icon {
     background-color: var(--medium-grey);
     border-radius: 100%;
     font-size: 20px;
-    color: var(--offset);
+    user-select: none;
+}
+nav.scrolled > .user-options > a.profile-icon-container > .profile-icon {
+    background-color: white;
+    color: var(--dark-grey);
 }
 nav > .user-options > a.profile-icon-container > .profile-icon > .profile-icon-text  {
     font-size: 20px;
     color: white;
+}
+nav.scrolled > .user-options > a.profile-icon-container > .profile-icon > .profile-icon-text  {
+    color: var(--dark-grey);
 }

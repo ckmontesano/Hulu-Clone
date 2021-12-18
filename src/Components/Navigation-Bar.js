@@ -6,6 +6,17 @@ import MagnifyingGlass from '../Resources/Icons/magnifying-glass.png';
 
 export default function NavBar() {
 
+    window.addEventListener("scroll", () => {
+        let offset = window.pageYOffset;
+        let navBar = document.querySelector("nav");
+        
+        if ( offset != 0 ) {
+            navBar.classList.add("scrolled");
+        } else {
+            navBar.classList.remove("scrolled");
+        }
+    })
+
     return (
         <nav>
             <div className="branding-container">

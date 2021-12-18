@@ -12,17 +12,18 @@ body {
 
 .App {
   text-align: center;
-  height: 500vh;
 }
 
 h2 {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 18px;
   text-transform: uppercase;
+  letter-spacing: 110%;
 }
 h3 {
-  margin: 5px 0;
+  margin: 8px 0;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 110%;
 }

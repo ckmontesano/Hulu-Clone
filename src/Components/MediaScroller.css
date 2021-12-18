@@ -1,9 +1,71 @@
 
 .media-scroller {
-    background: var(--light-grey);
     text-align: left;
     padding: 20px 0;
 }
 .media-scroller h2 {
     display: block;
+}
+
+.slider {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider-item {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 169px;
+    margin: 0 2px;
+}
+.slider-item:nth-of-type(1) {
+    margin-left: 0;
+}
+.slider-item > .three-dots {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 998;
+    height: 25px;
+    filter: drop-shadow(0 0 5px black)
+}
+.slider-content, .slider-backdrop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 997;
+    opacity: 0;
+    transition: .2s opacity;
+}
+.slider-item:hover > .slider-content {
+    opacity: 1;
+}
+.slider-content > .right-arrow {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px 3px black;
+    cursor: pointer;
+}
+.slider-content > .right-arrow > img {
+    width: 100%;
+    height: 100%;
+    transform: scale(.5);
+}
+.slider-backdrop > img {
+    width: 100%;
+    -webkit-box-shadow: inset 0px 0px 40px 0px #000000; 
+    box-shadow: inset 0px 0px 40px 0px #000000;
 }

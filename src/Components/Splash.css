@@ -32,6 +32,7 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
+    cursor: pointer;
 }
 .splash-content > .splash-content-details > .action-buttons > button:hover {
     opacity: .8;
@@ -45,6 +46,10 @@
     background: transparent;
     border: solid 2px var(--white);
     color: var(--white);
+}
+.splash-content > .splash-content-details > .action-buttons > img {
+    height: 25px;
+    vertical-align: middle;
 }
 .splash-backdrop {
     background: linear-gradient(to right, #33D1F1, black);

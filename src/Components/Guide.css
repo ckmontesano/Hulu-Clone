@@ -2,3 +2,19 @@
 .guide {
     padding: 30px 50px;
 }
+
+.feature-banner {
+    margin: 20px 0;
+    background-color: #274943;
+    background-image: url("../Resources/Images/christmas-lights-banner.webp");
+    background-size: 100%;
+}
+.feature-banner-content {
+    background: linear-gradient(to right, transparent, #274943, transparent);
+    padding: 15px;
+}
+.feature-banner-content > .right-arrow-circle {
+    margin: 0 20px;
+    height: 18px;
+    opacity: .5;
+}

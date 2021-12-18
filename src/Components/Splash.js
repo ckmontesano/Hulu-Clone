@@ -10,13 +10,13 @@ export default function Splash() {
             <div className="splash-content">
                 <div className="splash-content-details">
                     <h3>New on Hulu</h3>
-                    <img src={TedBundyTitle} alt="Ted Bundy Show Title" />
+                    <img src={TedBundyTitle} alt="Ted Bundy Show Title" draggable="false" />
                     <p className="description">
-                    A specter roams the highways of a gritty 1970s America, his name is Ted Bundy. Hunting him are intrepid FBI agents Kathleen McChesney and Robert Ressler, organizers of the largest manhunt in history to apprehend America's most infamous serial killer
+                        A specter roams the highways of a gritty 1970s America, his name is Ted Bundy. Hunting him are intrepid FBI agents Kathleen McChesney and Robert Ressler, organizers of the largest manhunt in history to apprehend America's most infamous serial killer
                     </p>
                     <div className="action-buttons">
                         <button>
-                        &#9654; Play
+                            &#9654; Play
                         </button>
                         <button>
                             Details

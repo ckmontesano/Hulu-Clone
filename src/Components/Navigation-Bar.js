@@ -10,10 +10,15 @@ export default function NavBar() {
         let offset = window.pageYOffset;
         let navBar = document.querySelector("nav");
         
-        if ( offset != 0 ) {
+        if ( offset > 400 ) {
+            navBar.classList.remove("scrolled");
+            navBar.classList.add("overscrolled");
+        } else if ( offset != 0 ) {
+            navBar.classList.remove("overscrolled");
             navBar.classList.add("scrolled");
         } else {
             navBar.classList.remove("scrolled");
+            navBar.classList.remove("overscrolled");
         }
     })
 
@@ -21,7 +26,7 @@ export default function NavBar() {
         <nav>
             <div className="branding-container">
                 <a>
-                    <img src={HuluLogo} alt="Hulu" />
+                    <img src={HuluLogo} alt="Hulu" draggable="false" />
                 </a>
             </div>
             <ul className="nav-options-container">
@@ -46,7 +51,7 @@ export default function NavBar() {
             </ul>
             <div className="user-options">
                 <a className="magifying-glass-container">
-                    <img src={MagnifyingGlass} alt="Search" />
+                    <img src={MagnifyingGlass} alt="Search" draggable="false" />
                 </a>
                 <a className="profile-icon-container">
                     <div className="profile-icon">

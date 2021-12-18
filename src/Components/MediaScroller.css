@@ -1,0 +1,9 @@
+
+.media-scroller {
+    background: var(--light-grey);
+    text-align: left;
+    padding: 20px 0;
+}
+.media-scroller h2 {
+    display: block;
+}

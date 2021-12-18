@@ -1,0 +1,95 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 10px 0;
+    width: calc(100% - 20px);
+    height: 40px;
+    border-bottom: solid 1px var(--medium-grey);
+}
+
+nav > .branding-container {
+    padding-left: 30px;
+    height: 100%;
+}
+nav > .branding-container > a {
+    display: block;
+    /* override padding */
+    margin-top: -10px;
+    height: calc(100% + 20px);
+    /**/
+    padding: 0 20px;
+    cursor: pointer;
+}
+nav > .branding-container > a > img {
+    height: 100%;
+}
+
+nav > .nav-options-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav > .nav-options-container > li {
+    display: inline-table;
+    padding: 0 8px;
+    height: 100%;
+}
+nav > .nav-options-container > li > a {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer; /* remove when link provided */
+    transition: .2s background;
+}
+nav > .nav-options-container > li:nth-of-type(1) > a {
+    background-color: var(--light-grey);
+}
+nav > .nav-options-container > li > a:hover {
+    background-color: var(--light-grey);
+}
+
+nav > .user-options {
+    height: 100%;
+}
+nav > .user-options > a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    height: 100%;
+}
+/* magnifying glass */
+nav > .user-options > a.magifying-glass-container > img {
+    height: 100%;
+    transform: scale(.8);
+    opacity: .8;
+    cursor: pointer;
+}
+nav > .user-options > a.magifying-glass-container > img:hover {
+    opacity: .6;
+}
+nav > .user-options > a.profile-icon-container {
+    display: inline-table;
+    height: 100%;
+}
+nav > .user-options > a.profile-icon-container > .profile-icon {
+    display: table-cell;
+    vertical-align: middle;
+    height: 30px;
+    width: 40px;
+    background-color: var(--medium-grey);
+    border-radius: 100%;
+    font-size: 20px;
+    color: var(--offset);
+}
+nav > .user-options > a.profile-icon-container > .profile-icon > .profile-icon-text  {
+    font-size: 20px;
+    color: white;
+}

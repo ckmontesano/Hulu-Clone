@@ -1,7 +1,7 @@
 
 import './Splash.css';
 import TedBundyTitle from '../Resources/Images/tedbundy-title.png';
-import TedBundy from '../Resources/Images/tedbundy-desktop.webp';
+import TedBundyDesktop from '../Resources/Images/tedbundy-desktop.webp';
 import ThreeDotsIcon from '../Resources/Icons/three-dots.png';
 
 export default function Splash() {
@@ -27,7 +27,7 @@ export default function Splash() {
                 </div>
             </div>
             <div className="splash-backdrop">
-                <img src={TedBundy} alt="Ted Bundy Show" />
+                <img className="desktop" src={TedBundyDesktop} alt="Ted Bundy Show" />
             </div>
         </div>
     )

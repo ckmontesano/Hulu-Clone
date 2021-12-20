@@ -3,7 +3,7 @@ This is a small project I designed to showcase my front-end abilities. On some s
 
 ## Screenshots
 #### Landing Page
-![Desktop Landing Page](https://github.com/ckmontesano/Coffee-Shop/blob/master/Screenshots/Desktop/coffee-shop.png)
+![Desktop Landing Page](https://github.com/ckmontesano/Hulu-Clone/blob/master/hulu-clone.png)
 
 ## License
 MIT (Hulu Branding is not my property and parts of this project that include the Hulu branding are not free-use).
